@@ -1,10 +1,13 @@
 @font-face {
-    font-family: 'recoletaregular_demo';
-    src: url('fonts/recoleta-regulardemo-webfont.woff2') format('woff2'),
-         url('fonts/recoleta-regulardemo-webfont.woff') format('woff');
-    font-weight: normal;
+    font-family: 'Recoleta';
+    src: url('recolleta/Recoleta-Medium.eot');
+    src: local('recolleta/Recoleta Medium'), local('Recoleta-Medium'),
+        url('recolleta/Recoleta-Medium.eot?#iefix') format('embedded-opentype'),
+        url('recolleta/Recoleta-Medium.woff2') format('woff2'),
+        url('recolleta/Recoleta-Medium.woff') format('woff'),
+        url('recolleta/Recoleta-Medium.ttf') format('truetype');
+    font-weight: 500;
     font-style: normal;
-
 }
 
 @font-face {
@@ -54,7 +57,7 @@ section {
                                 color: #573F7B;
                                 margin-top: 5%;
                                 text-align: center;
-                                font-family: 'recoletaregular_demo';
+                                font-family: 'Recoleta';
                             }
 
                             p {
@@ -100,7 +103,7 @@ section {
                             font-weight: bold;
                             font-size: 48px;
                             color: #fff;
-                            font-family: 'recoletaregular_demo';
+                            font-family: 'Recoleta';
                         }
                 }
 
