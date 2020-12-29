@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+
+     <!-- goggle fonts -->
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&family=Nunito+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="createcss/style.css">
+</head>
+<body>
+   <section>
+       <div class="div-1">
+           <img class="logo" src="images/Finprimer Logo.png" alt="Logo">
+           <h3 class="h3">Have an account already? <a href="#">Get Access</a></h3>
+           <button class="button"><a href="login.html">Log In</a></button>
+           <div class="cc-icons">
+            <a href="#"><i class='fab fa-facebook-f'></i></i></a>
+            <a href="#"><i class='fab fa-instagram'></i></a>
+            <a href="#"><i class='fab fa-twitter'></i></a>
+           
+        </div>
+        <img class="bad-plant" src="images/twoplant.png" alt="Plant image">
+       </div>
+       <div class="div-2">
+           <form action="#" method="post">
+               <h3 class="h3-2">Welcome to <span>Finprimer</span></h3>
+               <p class="p">Sign up by filling the form below</p>
+               <div class="name">
+                <div class="first">
+                <label for="firstName">First Name</label>
+                <input type="text" name="firstName" id="firstName" placeholder="john"  required>
+                </div>
+                <div class="last">
+                    <label for="LastName">Last Name</label>
+                <input type="text" name="LastName" id="LastName" placeholder="Doe" required>
+                </div>
+               </div>
+               
+               <div class="div-email">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="johndoe@gmail.com" required>
+               </div>
+               
+               <div class="div-pass">
+                <label for="password">Password</label>
+                <input type="password"  name="password" id="password" value="Password" required>
+                <span  id="eyes"  class="fa fa-fw fa-eye" onclick="myFunction()"></span>
+               </div>
+
+               <script>
+                function myFunction() {
+                  var x = document.getElementById("password");
+                  if (x.type === "password") {
+                    x.type = "text";
+                  } else {
+                    x.type = "password";
+                  }
+                }
+                </script>
+
+                <div class="div-con-pass">
+                    <label for="confirmPassword">Confirm your password</label>
+                <input type="password" name="confirmPassword" id="confirmPassword" value="confirmPassword" required>
+                <span  class="fa fa-fw fa-eye" onclick="myFunctionN()"></span>
+                </div>
+
+                <script>
+                    function myFunctionN() {
+                      var x = document.getElementById("confirmPassword");
+                      if (x.type === "password") {
+                        x.type = "text";
+                      } else {
+                        x.type = "password";
+                      }
+                    }
+                    </script>
+
+                <input id="submit" type="submit" name="submit" value="Create an account">
+           </form>
+           <p class="sign">By signing up, you agree to the <span>Terms of Service</span> and <span>Privacy Policy.</span></p>
+
+           <div class="hr-s">
+               <img src="images/Line 2.png" alt=""><p>or Sign up using</p><img src="images/Line 2.png" alt="">
+           </div>
+
+           <div class="options">
+            <a href="#"><i class='fab fa-facebook'></i></i></a>
+            <a href="#"><i class='fab fa-google'></i></i></a>
+           </div>
+           <p class="log">Already have an account?<a href="#">Log In</a></p>
+       </div>
+       
+   </section> 
+   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+
+   <script src="scripts/signup-animate.js"></script>
+</body>
+</html>
