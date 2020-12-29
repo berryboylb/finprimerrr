@@ -1,10 +1,13 @@
 @font-face {
-    font-family: 'recoletaregular_demo';
-    src: url('fonts/recoleta-regulardemo-webfont.woff2') format('woff2'),
-         url('fonts/recoleta-regulardemo-webfont.woff') format('woff');
-    font-weight: normal;
+    font-family: 'Recoleta';
+    src: url('recolleta/Recoleta-Medium.eot');
+    src: local('recolleta/Recoleta Medium'), local('Recoleta-Medium'),
+        url('recolleta/Recoleta-Medium.eot?#iefix') format('embedded-opentype'),
+        url('recolleta/Recoleta-Medium.woff2') format('woff2'),
+        url('recolleta/Recoleta-Medium.woff') format('woff'),
+        url('recolleta/Recoleta-Medium.ttf') format('truetype');
+    font-weight: 500;
     font-style: normal;
-
 }
 
 @font-face {
@@ -57,7 +60,7 @@ section {
                     }
                     h3 {
                         font-size: 48px;
-                        font-family: 'recoletaregular_demo';
+                        font-family: 'Recoleta';
                         text-align: center;
                         color: #FFFFFF;
                         width: 100%;
@@ -118,7 +121,7 @@ section {
                     h3 {
                         font-size: 32px;
                         color: #573F7B;
-                        font-family: 'recoletaregular_demo';
+                        font-family: 'Recoleta';
                         letter-spacing: 2px;
                         font-weight: bold;
                     }
@@ -137,7 +140,7 @@ section {
                         position: relative;
 
                         label {
-                            font-family: 'recoletaregular_demo';
+                            font-family: 'Recoleta';
                             font-style: normal;
                             font-weight: bold;
                             font-size: 16px;
@@ -183,7 +186,7 @@ section {
                         position: relative;
 
                         label {
-                            font-family: 'recoletaregular_demo';
+                            font-family: 'Recoleta';
                             font-style: normal;
                             font-weight: bold;
                             font-size: 16px;
@@ -233,7 +236,7 @@ section {
 
                         &:hover {
                             color: #201047;
-                            font-family: 'recoletaregular_demo';
+                            font-family: 'Recoleta';
                             background: #f4f4f4;
                         }
                     }

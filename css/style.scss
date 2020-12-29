@@ -1,10 +1,16 @@
-@font-face {
-    font-family: 'recoletaregular_demo';
-    src: url('fonts/recoleta-regulardemo-webfont.woff2') format('woff2'),
-         url('fonts/recoleta-regulardemo-webfont.woff') format('woff');
-    font-weight: 600;
-    font-style: normal;
 
+
+
+@font-face {
+    font-family: 'Recoleta';
+    src: url('recolleta/Recoleta-Medium.eot');
+    src: local('recolleta/Recoleta Medium'), local('Recoleta-Medium'),
+        url('recolleta/Recoleta-Medium.eot?#iefix') format('embedded-opentype'),
+        url('recolleta/Recoleta-Medium.woff2') format('woff2'),
+        url('recolleta/Recoleta-Medium.woff') format('woff'),
+        url('recolleta/Recoleta-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
 }
 
 @font-face {
@@ -14,7 +20,7 @@
         url('matter/Matter-Light.eot?#iefix') format('embedded-opentype'),
         url('matter/Matter-Light.woff2') format('woff2'),
         url('matter/Matter-Light.woff') format('woff'),
-        url('matter/Matter-Light.ttf') format('truetype');
+        url('matter/Matter-Light.ttf') format('truetype'); /* Legacy iOS */
     font-weight: 300;
     font-style: normal;
 }
@@ -318,7 +324,7 @@ nav {
 
             h1 {
                 font-size: 75px;
-                font-family: 'recoletaregular_demo';
+                font-family: 'Recoleta';
                 color: #201047;
                 margin-top: 10%;
                 width: 120%;
@@ -474,7 +480,7 @@ nav {
                         h3 {
                             font-size: 32px;
                             color: #F2780B;
-                            font-family: 'recoletaregular_demo';
+                            font-family: 'Recoleta';
                             margin-bottom: 3%;
                         }
                         p {
@@ -599,10 +605,9 @@ nav {
     overflow: hidden;
         h2 {
             text-align: center;
-            font-family: 'recoletaregular_demo';
+            font-family: 'Recoleta';
             color: #201047;
             font-size: 32px;
-            font-feature-settings: 'liga' off;
              margin-bottom: 5%;
         }
 
@@ -628,7 +633,7 @@ nav {
                 }
 
                 h3 {
-                    font-family: 'recoletaregular_demo';
+                    font-family: 'Recoleta';
                     font-style: normal;
                     font-weight: 600;
                     font-size: 18px;
@@ -695,7 +700,7 @@ nav {
                 margin-bottom: 5%;
             }
             h3 {
-                font-family: 'recoletaregular_demo';
+                font-family: 'Recoleta';
                     font-style: normal;
                     font-weight: 600;
                     font-size: 18px;
@@ -754,7 +759,7 @@ nav {
             }
 
             h3 {
-                font-family: 'recoletaregular_demo';
+                font-family: 'Recoleta';
                     font-style: normal;
                     font-weight: 600;
                     font-size: 18px;
@@ -809,7 +814,7 @@ nav {
         }
 
         h3 {
-            font-family: 'recoletaregular_demo';
+            font-family: 'Recoleta';
                 font-style: normal;
                 font-weight: 600;
                 font-size: 18px;
@@ -946,7 +951,7 @@ nav {
             color: #201047;
             position: absolute;
             top: 2%;
-            font-family: 'recoletaregular_demo';
+            font-family: 'Recoleta';
         }
 
         .fourth-sec-1 {
@@ -973,7 +978,7 @@ nav {
                     font-weight: 600;
                     font-size: 18px;
                     color: #201047;
-                    font-family: 'recoletaregular_demo';
+                    font-family: 'Recoleta';
                     margin-top: 5%;
                     letter-spacing: 3px;
                 }
@@ -1025,7 +1030,7 @@ nav {
                     font-weight: 600;
                     font-size: 18px;
                     color: #201047;
-                    font-family: 'recoletaregular_demo';
+                    font-family: 'Recoleta';
                     margin-top: 5%;
                     letter-spacing: 3px;
                 }
@@ -1085,7 +1090,7 @@ nav {
                     font-weight: 600;
                     font-size: 18px;
                     color: #201047;
-                    font-family: 'recoletaregular_demo';
+                    font-family: 'Recoleta';
                     margin-top: 5%;
                     letter-spacing: 3px;
                 }
@@ -1555,7 +1560,7 @@ nav {
         text-align: center;
         align-self: center;
         width: 60%;
-        font-family: 'recoletaregular_demo';
+        font-family: 'Recoleta';
         z-index: 2;
     }
 
@@ -1569,7 +1574,7 @@ nav {
         margin-top: 3%;
         font-size: 20px;
         outline: none;
-        font-family: 'recoletaregular_demo';
+        font-family: 'Recoleta';
     }
 
     button:hover {
@@ -1660,7 +1665,7 @@ nav {
                 font-weight: bold;
                 font-size: 32px;
                 color: #201047;
-                font-family: 'recoletaregular_demo';
+                font-family: 'Recoleta';
             }
 
             #email {
@@ -1778,7 +1783,7 @@ footer {
                     h3 {
                         font-size: 20px;
                         margin-bottom: 10%;
-                        font-family: 'recoletaregular_demo';
+                        font-family: 'Recoleta';
                         color: #fff;
                         letter-spacing: 3px;
                     }
