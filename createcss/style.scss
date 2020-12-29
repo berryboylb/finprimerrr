@@ -1,0 +1,609 @@
+@font-face {
+    font-family: 'recoletaregular_demo';
+    src: url('fonts/recoleta-regulardemo-webfont.woff2') format('woff2'),
+         url('fonts/recoleta-regulardemo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Matter';
+    src: url('matter/Matter-Light.eot');
+    src: local('matter/Matter Light'), local('Matter-Light'),
+        url('matter/Matter-Light.eot?#iefix') format('embedded-opentype'),
+        url('matter/Matter-Light.woff2') format('woff2'),
+        url('matter/Matter-Light.woff') format('woff'),
+        url('matter/Matter-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section {
+    display: flex;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+
+        .div-1 {
+            background: #201047;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            padding: 3%;
+            width: 100%;
+            height: 100vh;
+             .logo {
+                 height: 7%;
+                 align-self: center;
+             }
+             h3 {
+                 font-size: 48px;
+                 font-family: 'recoletaregular_demo';
+                 text-align: center;
+                 color: #FFFFFF;
+                 width: 70%;
+
+                 a {
+                   color: #F8AF6D;
+                    text-decoration: none;
+                 }
+                 a:hover {
+                     opacity: 0.7;
+                 }
+             }
+
+             button {
+                 padding: 2% 15%;
+                 background: #F8AF6D;
+                 font-size: 16px;
+                 outline: none;
+                 border-radius: 8px;
+                 color: #fff;
+                 outline: none;
+                 border: none;
+                 width: 50%;
+                    a {
+                        text-decoration: none;
+                        color: inherit;
+                    }
+             }
+
+             button:hover {
+                 color:  #F8AF6D;
+                background: #f4f4f4; 
+             }
+
+             .cc-icons {
+                 position: absolute;
+                 right: 5%;
+                 bottom: 5%;
+                 width: 20%;
+                 display: flex;
+                 justify-content: space-between;
+
+                  a {
+                      text-decoration: none;
+                      i {
+                          font-size: 20px;
+                          color: #fff;
+                      }
+                      &:hover {
+                          opacity: 0.7;
+                      }
+                  }
+             }
+             .bad-plant {
+                position: absolute;
+                left: 0;
+                bottom: 0%;
+                height: 30%;
+            }
+             
+        }
+
+        .div-2 {
+            background: #fff;
+            padding: 5%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+                form {
+                    display: flex;
+                    flex-direction: column;
+
+                    h3 {
+                        font-size: 32px;
+                        color: #F2780B;
+                        font-family: 'recoletaregular_demo';
+                        letter-spacing: 2px;
+                        font-weight: bold;
+
+                        span {
+                            color: #201047;
+                        }
+                    }
+
+                    p {
+                        font-size: 18px;
+                        color: #737B7D;
+                        margin-top: 2%;
+                        font-family: Arial;
+                    }
+
+                    .name {
+                        display: flex;
+                        margin-top: 2%;
+                        justify-content: space-between;
+                        width: 100%;
+
+                            .first {
+                                width: 45%;
+                                 label {
+                                    font-family: 'recoletaregular_demo';
+                                    font-style: normal;
+                                    font-weight: bold;
+                                    font-size: 16px;
+                                    line-height: 1;
+                                    color: #F8AF6D;
+                                 }
+                                 
+                                 input {
+                                     width: 100% !important;
+                                     margin-top: 5%;
+                                     border: none;
+                                     border-bottom: 3px solid #573F7B;
+                                     padding: 2% 0%;
+                                     outline: none;
+
+                                     &::placeholder {
+                                         font-size: 16px;
+                                         color: #573F7B;
+                                         text-transform: capitalize;
+                                     }
+
+                                     &:focus {
+                                        color: #F8AF6D;
+                                     }
+                                 }
+                            }
+
+                            .last {
+                                width: 45%;
+                                label {
+                                    font-family: 'recoletaregular_demo';
+                                    font-style: normal;
+                                    font-weight: bold;
+                                    font-size: 16px;
+                                    line-height: 1;
+                                    color: #F8AF6D;
+                                 }
+
+                                 input {
+                                    width: 100% !important;
+                                    margin-top: 5%;
+                                    border: none;
+                                    border-bottom: 3px solid #573F7B;
+                                    padding: 2% 0%;
+                                    outline: none;
+
+                                    &::placeholder {
+                                        font-size: 16px;
+                                        color: #573F7B;
+                                        text-transform: capitalize;
+                                    }
+
+                                    &:focus {
+                                       color: #F8AF6D;
+                                    }
+                                }
+                            }
+                    }
+
+                    .div-email {
+                        display: flex;
+                        flex-direction: column;
+                        margin-top: 5%;
+
+                        label {
+                            font-family: 'recoletaregular_demo';
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 16px;
+                            line-height: 1;
+                            color: #F8AF6D;
+                         }
+
+                         input {
+                            width: 100% !important;
+                            margin-top: 2.5%;
+                            border: none;
+                            border-bottom: 3px solid #573F7B;
+                            padding: 1% 0%;
+                            outline: none;
+
+                            &::placeholder {
+                                font-size: 16px;
+                                color: #573F7B;
+                                text-transform: capitalize;
+                            }
+
+                            &:focus {
+                               color: #F8AF6D;
+                            }
+                        }
+                    }
+
+                    .div-pass {
+                        display: flex;
+                        flex-direction: column;
+                        margin-top: 2.5%;
+                        position: relative;
+
+                        label {
+                            font-family: 'recoletaregular_demo';
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 16px;
+                            line-height: 1;
+                            color: #F8AF6D;
+                         }
+
+                         input {
+                            width: 100% !important;
+                            margin-top: 2.5%;
+                            border: none;
+                            border-bottom: 3px solid #573F7B;
+                            padding: 1% 0%;
+                            outline: none;
+
+                            &::placeholder {
+                                font-size: 16px;
+                                color: #573F7B;
+                                text-transform: capitalize;
+                            }
+
+                            &:focus {
+                               color: #F8AF6D;
+                            }
+
+                            
+                        }
+
+                        span {
+                            color: #573F7B;
+                            position: absolute;
+                            right: 2%;
+                            bottom: 20%;
+                            font-size: 15px;
+                        }
+                    }
+
+                    .div-con-pass {
+                        display: flex;
+                        flex-direction: column;
+                        margin-top: 2.5%;
+                        position: relative;
+
+                        label {
+                            font-family: 'recoletaregular_demo';
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 16px;
+                            line-height: 1;
+                            color: #F8AF6D;
+                         }
+
+                         input {
+                            width: 100% !important;
+                            margin-top: 5%;
+                            border: none;
+                            border-bottom: 3px solid #573F7B;
+                            padding: 1% 0%;
+                            outline: none;
+
+                            &::placeholder {
+                                font-size: 16px;
+                                color: #573F7B;
+                                text-transform: capitalize;
+                            }
+
+                            &:focus {
+                               color: #F8AF6D;
+                            }
+                        }
+
+                        span {
+                            color: #573F7B;
+                            position: absolute;
+                            right: 2%;
+                            bottom: 20%;
+                            font-size: 15px;
+                        }
+                    }
+
+                    #submit {
+                        width: 100%;
+                        margin-top: 5%;
+                        padding: 2% 7%; 
+                        background: #201047;
+                        color: #fff;
+                        border-radius: 8px;
+                        font-size: 16px;
+                        font-family: 'Matter';
+                        outline: none;
+                        border: none;
+
+                        &:hover {
+                            color: #201047;
+                            font-family: 'recoletaregular_demo';
+                            background: #f4f4f4;
+                        }
+                    }
+
+                    
+                
+                }
+
+                .sign {
+                    margin-top: 2.5%;
+                    font-size: 16px;
+                    color: #737B7D;
+                    font-family: 'Matter';
+
+                    span {
+                        color: #F8AF6D;
+                    }
+                }
+
+                .hr-s {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 2%;
+                    width: 60%;
+
+                    img {
+                        height: 2px;
+                        width: 30%;
+                        align-self: center;
+                    }
+
+                    p {
+                        color: #F2780B;
+                        align-self: center;
+                        font-size: 16px;
+                    }
+                }
+
+                .options {
+                    margin-top: 2%;
+                    width: 40%;
+                    display: flex;
+                    justify-content: space-evenly;
+
+                    .fa-facebook {
+                        background: #4A7AFF;
+                        color: #fff;
+                        font-size: 25px;
+                        border-radius: 50%;
+                        padding: 20%;
+                    }
+
+                    .fa-google {
+                        background:  #CF4C3C;
+                        color: #fff;
+                        font-size: 25px;
+                        border-radius: 50%;
+                        padding: 20%;
+                    }
+                }
+        }
+      .log {
+          display: none;
+      }  
+        
+}
+
+@media screen and (max-width:1024px) {
+    section {
+        flex-direction: column;
+
+        .div-1 {
+            height: 50vh;
+
+            
+        }
+
+        .div-2 {
+            height: 50vh;
+            padding: 5%;
+        }
+    }
+}
+
+
+@media screen and (max-width:768px) {
+ section {
+     flex-direction: column;
+
+     .div-1 {
+         display: none;
+     }
+
+     .div-2 {
+         height: 100vh;
+         width: 100vw;
+         padding: 10%;
+            form {
+
+                h3 {
+                    font-size: 24px;
+                }
+
+                p {
+                    font-size: 14px;
+                    margin-top: 5%;
+                }
+
+                .name {
+                    margin-top: 5%;
+
+                    .first {
+
+                        label {
+                            font-size: 14px;
+                        }
+
+                        input {
+                            padding: 4% 0%;
+                            border-bottom: 1px solid #573F7B;
+                            
+                        &::placeholder {
+                            font-size: 14px;
+                        }
+                        }
+                    }
+
+                    .last {
+
+                        label {
+                            font-size: 14px;
+                        }
+
+                        input {
+                            padding: 4% 0%;
+                            border-bottom: 1px solid #573F7B;
+                            
+                        &::placeholder {
+                            font-size: 14px;
+                        }
+                        }
+                    }
+                }
+
+                .div-email {
+                    margin-top: 5%;
+
+                    label {
+                        font-size: 14px;
+                    }
+
+                    input {
+                        padding: 4% 0%;
+                        border-bottom: 1px solid #573F7B;
+                        
+                    &::placeholder {
+                        font-size: 14px;
+                    }
+                }
+
+                
+
+                }
+
+                .div-pass {
+                    margin-top: 5%;
+
+                    label {
+                        font-size: 14px;
+                    }
+
+                    input {
+                        padding: 4% 0%;
+                        border-bottom: 1px solid #573F7B;
+                        
+                    &::placeholder {
+                        font-size: 14px;
+                    } 
+
+                     }
+                }
+
+                .div-con-pass {
+                    margin-top: 5%;
+
+                    label {
+                        font-size: 14px;
+                    }
+
+                    input {
+                        padding: 4% 0%;
+                        border-bottom: 1px solid #573F7B;
+                        
+                    &::placeholder {
+                        font-size: 14px;
+                    } 
+
+                     }
+                }
+
+
+                #submit {
+                    margin-top: 10%;
+                    font-size: 14px;
+                }
+
+               
+            }
+
+            .sign {
+                font-size: 12px;
+                margin-top: 5%;
+            }
+
+            .hr-s {
+                width: 100%;
+                img {
+                    height: 1px;
+                }
+
+                p {
+                    font-weight: 500;
+                    font-size: 12px;
+                }
+            }
+
+            .options {
+
+                .fa-facebook {
+                    font-size: 15px;
+                    padding: 40%;
+                }
+
+                .fa-google  {
+                    font-size: 15px;
+                    padding: 40%;
+                }
+            }
+     }
+
+     .log {
+        display: block;
+        margin-top: 0%;
+        text-align: center;
+        font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+
+        a {
+            text-decoration: none;
+            padding: 2%;
+            font-weight: bold;
+        }
+    }
+ }
+
+
+ 
+}

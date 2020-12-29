@@ -1,0 +1,212 @@
+@font-face {
+  font-family: 'recoletaregular_demo';
+  src: url("fonts/recoleta-regulardemo-webfont.woff2") format("woff2"), url("fonts/recoleta-regulardemo-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Matter';
+  src: url("matter/Matter-Light.eot");
+  src: local("matter/Matter Light"), local("Matter-Light"), url("matter/Matter-Light.eot?#iefix") format("embedded-opentype"), url("matter/Matter-Light.woff2") format("woff2"), url("matter/Matter-Light.woff") format("woff"), url("matter/Matter-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+section .div-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 5%;
+  position: relative;
+  background: #fff;
+}
+
+section .div-1 div {
+  background: #FBC99D;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5%;
+  border-radius: 8px 0px 0px 8px;
+}
+
+section .div-1 div h3 {
+  font-weight: bold;
+  font-size: 24px;
+  color: #573F7B;
+  margin-top: 5%;
+  text-align: center;
+  font-family: 'recoletaregular_demo';
+}
+
+section .div-1 div p {
+  font-size: 18px;
+  text-align: center;
+  font-family: 'Matter';
+  width: 70%;
+  margin-top: 5%;
+}
+
+section .div-1 .big-coin {
+  height: 20%;
+  position: absolute;
+  left: 5%;
+  bottom: 3%;
+}
+
+section .div-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 5%;
+  position: relative;
+  background: #201047;
+}
+
+section .div-2 .mail {
+  height: 50%;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section .div-2 .mail img {
+  height: 20%;
+}
+
+section .div-2 .mail h3 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  color: #fff;
+  font-family: 'recoletaregular_demo';
+}
+
+section .div-2 .cc-icons {
+  position: absolute;
+  left: 5%;
+  bottom: 5%;
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section .div-2 .cc-icons a {
+  text-decoration: none;
+}
+
+section .div-2 .cc-icons a i {
+  font-size: 20px;
+  color: #fff;
+}
+
+section .div-2 .cc-icons a:hover {
+  opacity: 0.7;
+}
+
+section .div-2 .plant {
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  height: 40%;
+}
+
+@media screen and (max-width: 1024px) {
+  section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section .div-1 {
+    height: 50vh;
+  }
+  section .div-2 {
+    height: 50vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section .div-1 {
+    height: 100vh;
+  }
+  section .div-1 div img {
+    height: 100px;
+  }
+  section .div-1 div h3 {
+    font-size: 16px;
+  }
+  section .div-1 div p {
+    font-size: 14px;
+  }
+  section .div-1 .big-coin {
+    left: 60%;
+    height: 15%;
+  }
+  section .div-2 {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */

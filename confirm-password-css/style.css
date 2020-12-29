@@ -1,0 +1,428 @@
+@font-face {
+  font-family: 'recoletaregular_demo';
+  src: url("fonts/recoleta-regulardemo-webfont.woff2") format("woff2"), url("fonts/recoleta-regulardemo-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Matter';
+  src: url("matter/Matter-Light.eot");
+  src: local("matter/Matter Light"), local("Matter-Light"), url("matter/Matter-Light.eot?#iefix") format("embedded-opentype"), url("matter/Matter-Light.woff2") format("woff2"), url("matter/Matter-Light.woff") format("woff"), url("matter/Matter-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+section .div-1 {
+  background: #201047;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 5%;
+  position: relative;
+}
+
+section .div-1 .clich {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5%;
+  border-radius: 8px 0px 0px 8px;
+  z-index: 3;
+  height: 50%;
+}
+
+section .div-1 .clich .logo {
+  height: 20%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+section .div-1 .clich h3 {
+  font-size: 48px;
+  font-family: 'recoletaregular_demo';
+  text-align: center;
+  color: #FFFFFF;
+  width: 100%;
+}
+
+section .div-1 .clich p {
+  font-family: 'Matter';
+  font-style: normal;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  line-height: 2;
+}
+
+section .div-1 .cc-icons {
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section .div-1 .cc-icons a {
+  text-decoration: none;
+}
+
+section .div-1 .cc-icons a i {
+  font-size: 20px;
+  color: #fff;
+}
+
+section .div-1 .cc-icons a:hover {
+  opacity: 0.7;
+}
+
+section .div-1 .bad-plant {
+  position: absolute;
+  left: 0;
+  bottom: 0%;
+  height: 30%;
+}
+
+section .div-2 {
+  background: #fff;
+  padding: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+section .div-2 form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section .div-2 form h3 {
+  font-size: 32px;
+  color: #573F7B;
+  font-family: 'recoletaregular_demo';
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+section .div-2 form p {
+  font-size: 18px;
+  color: #737B7D;
+  margin-top: 2%;
+  font-family: Arial;
+}
+
+section .div-2 form .div-pass {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 2.5%;
+  position: relative;
+}
+
+section .div-2 form .div-pass label {
+  font-family: 'recoletaregular_demo';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1;
+  color: #AEA79F;
+}
+
+section .div-2 form .div-pass input {
+  width: 100% !important;
+  margin-top: 2.5%;
+  border: none;
+  border-bottom: 3px solid #AEA79F;
+  padding: 1% 0%;
+  outline: none;
+}
+
+section .div-2 form .div-pass input::-webkit-input-placeholder {
+  font-size: 16px;
+  color: #AEA79F;
+  text-transform: capitalize;
+}
+
+section .div-2 form .div-pass input:-ms-input-placeholder {
+  font-size: 16px;
+  color: #AEA79F;
+  text-transform: capitalize;
+}
+
+section .div-2 form .div-pass input::-ms-input-placeholder {
+  font-size: 16px;
+  color: #AEA79F;
+  text-transform: capitalize;
+}
+
+section .div-2 form .div-pass input::placeholder {
+  font-size: 16px;
+  color: #AEA79F;
+  text-transform: capitalize;
+}
+
+section .div-2 form .div-pass input:focus {
+  color: #F8AF6D;
+}
+
+section .div-2 form .div-pass span {
+  color: #AEA79F;
+  position: absolute;
+  right: 2%;
+  bottom: 20%;
+  font-size: 15px;
+}
+
+section .div-2 form .div-con-pass {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 2.5%;
+  position: relative;
+}
+
+section .div-2 form .div-con-pass label {
+  font-family: 'recoletaregular_demo';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1;
+  color: #AEA79F;
+}
+
+section .div-2 form .div-con-pass input {
+  width: 100% !important;
+  margin-top: 5%;
+  border: none;
+  border-bottom: 3px solid  #AEA79F;
+  padding: 1% 0%;
+  outline: none;
+}
+
+section .div-2 form .div-con-pass input::-webkit-input-placeholder {
+  font-size: 16px;
+  color: #AEA79F;
+  text-transform: capitalize;
+}
+
+section .div-2 form .div-con-pass input:-ms-input-placeholder {
+  font-size: 16px;
+  color: #AEA79F;
+  text-transform: capitalize;
+}
+
+section .div-2 form .div-con-pass input::-ms-input-placeholder {
+  font-size: 16px;
+  color: #AEA79F;
+  text-transform: capitalize;
+}
+
+section .div-2 form .div-con-pass input::placeholder {
+  font-size: 16px;
+  color: #AEA79F;
+  text-transform: capitalize;
+}
+
+section .div-2 form .div-con-pass input:focus {
+  color: #F8AF6D;
+}
+
+section .div-2 form .div-con-pass span {
+  color: #AEA79F;
+  position: absolute;
+  right: 2%;
+  bottom: 20%;
+  font-size: 15px;
+}
+
+section .div-2 form #submit {
+  width: 100%;
+  margin-top: 5%;
+  padding: 2% 7%;
+  background: #201047;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: 'Matter';
+  outline: none;
+  border: none;
+}
+
+section .div-2 form #submit:hover {
+  color: #201047;
+  font-family: 'recoletaregular_demo';
+  background: #f4f4f4;
+}
+
+section .div-2 .big-coin {
+  height: 20%;
+  position: absolute;
+  right: 5%;
+  bottom: 3%;
+}
+
+@media screen and (max-width: 1024px) {
+  section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section .div-1 {
+    height: 50vh;
+  }
+  section .div-2 {
+    height: 50vh;
+    padding: 5%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section .div-1 {
+    display: none;
+  }
+  section .div-2 {
+    height: 100vh;
+    width: 100vw;
+    padding: 10%;
+  }
+  section .div-2 form {
+    width: 100%;
+  }
+  section .div-2 form h3 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  section .div-2 form p {
+    font-size: 14px;
+    margin-top: 5%;
+    line-height: 2;
+  }
+  section .div-2 form .div-pass {
+    margin-top: 5%;
+  }
+  section .div-2 form .div-pass label {
+    font-size: 14px;
+  }
+  section .div-2 form .div-pass input {
+    padding: 4% 0%;
+    border-bottom: 1px solid  #AEA79F;
+  }
+  section .div-2 form .div-pass input::-webkit-input-placeholder {
+    font-size: 14px;
+  }
+  section .div-2 form .div-pass input:-ms-input-placeholder {
+    font-size: 14px;
+  }
+  section .div-2 form .div-pass input::-ms-input-placeholder {
+    font-size: 14px;
+  }
+  section .div-2 form .div-pass input::placeholder {
+    font-size: 14px;
+  }
+  section .div-2 form .div-con-pass {
+    margin-top: 5%;
+  }
+  section .div-2 form .div-con-pass label {
+    font-size: 14px;
+  }
+  section .div-2 form .div-con-pass input {
+    padding: 4% 0%;
+    border-bottom: 1px solid  #AEA79F;
+  }
+  section .div-2 form .div-con-pass input::-webkit-input-placeholder {
+    font-size: 14px;
+  }
+  section .div-2 form .div-con-pass input:-ms-input-placeholder {
+    font-size: 14px;
+  }
+  section .div-2 form .div-con-pass input::-ms-input-placeholder {
+    font-size: 14px;
+  }
+  section .div-2 form .div-con-pass input::placeholder {
+    font-size: 14px;
+  }
+  section .div-2 form #submit {
+    margin-top: 10%;
+    font-size: 14px;
+  }
+  section .div-2 .big-coin {
+    left: 60%;
+    height: 15%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

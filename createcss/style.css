@@ -1,0 +1,751 @@
+@font-face {
+  font-family: 'recoletaregular_demo';
+  src: url("fonts/recoleta-regulardemo-webfont.woff2") format("woff2"), url("fonts/recoleta-regulardemo-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Matter';
+  src: url("matter/Matter-Light.eot");
+  src: local("matter/Matter Light"), local("Matter-Light"), url("matter/Matter-Light.eot?#iefix") format("embedded-opentype"), url("matter/Matter-Light.woff2") format("woff2"), url("matter/Matter-Light.woff") format("woff"), url("matter/Matter-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+section .div-1 {
+  background: #201047;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3%;
+  width: 100%;
+  height: 100vh;
+}
+
+section .div-1 .logo {
+  height: 7%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+section .div-1 h3 {
+  font-size: 48px;
+  font-family: 'recoletaregular_demo';
+  text-align: center;
+  color: #FFFFFF;
+  width: 70%;
+}
+
+section .div-1 h3 a {
+  color: #F8AF6D;
+  text-decoration: none;
+}
+
+section .div-1 h3 a:hover {
+  opacity: 0.7;
+}
+
+section .div-1 button {
+  padding: 2% 15%;
+  background: #F8AF6D;
+  font-size: 16px;
+  outline: none;
+  border-radius: 8px;
+  color: #fff;
+  outline: none;
+  border: none;
+  width: 50%;
+}
+
+section .div-1 button a {
+  text-decoration: none;
+  color: inherit;
+}
+
+section .div-1 button:hover {
+  color: #F8AF6D;
+  background: #f4f4f4;
+}
+
+section .div-1 .cc-icons {
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section .div-1 .cc-icons a {
+  text-decoration: none;
+}
+
+section .div-1 .cc-icons a i {
+  font-size: 20px;
+  color: #fff;
+}
+
+section .div-1 .cc-icons a:hover {
+  opacity: 0.7;
+}
+
+section .div-1 .bad-plant {
+  position: absolute;
+  left: 0;
+  bottom: 0%;
+  height: 30%;
+}
+
+section .div-2 {
+  background: #fff;
+  padding: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+section .div-2 form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section .div-2 form h3 {
+  font-size: 32px;
+  color: #F2780B;
+  font-family: 'recoletaregular_demo';
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+section .div-2 form h3 span {
+  color: #201047;
+}
+
+section .div-2 form p {
+  font-size: 18px;
+  color: #737B7D;
+  margin-top: 2%;
+  font-family: Arial;
+}
+
+section .div-2 form .name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+section .div-2 form .name .first {
+  width: 45%;
+}
+
+section .div-2 form .name .first label {
+  font-family: 'recoletaregular_demo';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1;
+  color: #F8AF6D;
+}
+
+section .div-2 form .name .first input {
+  width: 100% !important;
+  margin-top: 5%;
+  border: none;
+  border-bottom: 3px solid #573F7B;
+  padding: 2% 0%;
+  outline: none;
+}
+
+section .div-2 form .name .first input::-webkit-input-placeholder {
+  font-size: 16px;
+  color: #573F7B;
+  text-transform: capitalize;
+}
+
+section .div-2 form .name .first input:-ms-input-placeholder {
+  font-size: 16px;
+  color: #573F7B;
+  text-transform: capitalize;
+}
+
+section .div-2 form .name .first input::-ms-input-placeholder {
+  font-size: 16px;
+  color: #573F7B;
+  text-transform: capitalize;
+}
+
+section .div-2 form .name .first input::placeholder {
+  font-size: 16px;
+  color: #573F7B;
+  text-transform: capitalize;
+}
+
+section .div-2 form .name .first input:focus {
+  color: #F8AF6D;
+}
+
+section .div-2 form .name .last {
+  width: 45%;
+}
+
+section .div-2 form .name .last label {
+  font-family: 'recoletaregular_demo';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1;
+  color: #F8AF6D;
+}
+
+section .div-2 form .name .last input {
+  width: 100% !important;
+  margin-top: 5%;
+  border: none;
+  border-bottom: 3px solid #573F7B;
+  padding: 2% 0%;
+  outline: none;
+}
+
+section .div-2 form .name .last input::-webkit-input-placeholder {
+  font-size: 16px;
+  color: #573F7B;
+  text-transform: capitalize;
+}
+
+section .div-2 form .name .last input:-ms-input-placeholder {
+  font-size: 16px;
+  color: #573F7B;
+  text-transform: capitalize;
+}
+
+section .div-2 form .name .last input::-ms-input-placeholder {
+  font-size: 16px;
+  color: #573F7B;
+  text-transform: capitalize;
+}
+
+section .div-2 form .name .last input::placeholder {
+  font-size: 16px;
+  color: #573F7B;
+  text-transform: capitalize;
+}
+
+section .div-2 form .name .last input:focus {
+  color: #F8AF6D;
+}
+
+section .div-2 form .div-email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 5%;
+}
+
+section .div-2 form .div-email label {
+  font-family: 'recoletaregular_demo';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1;
+  color: #F8AF6D;
+}
+
+section .div-2 form .div-email input {
+  width: 100% !important;
+  margin-top: 2.5%;
+  border: none;
+  border-bottom: 3px solid #573F7B;
+  padding: 1% 0%;
+  outline: none;
+}
+
+section .div-2 form .div-email input::-webkit-input-placeholder {
+  font-size: 16px;
+  color: #573F7B;
+  text-transform: capitalize;
+}
+
+section .div-2 form .div-email input:-ms-input-placeholder {
+  font-size: 16px;
+  color: #573F7B;
+  text-transform: capitalize;
+}
+
+section .div-2 form .div-email input::-ms-input-placeholder {
+  font-size: 16px;
+  color: #573F7B;
+  text-transform: capitalize;
+}
+
+section .div-2 form .div-email input::placeholder {
+  font-size: 16px;
+  color: #573F7B;
+  text-transform: capitalize;
+}
+
+section .div-2 form .div-email input:focus {
+  color: #F8AF6D;
+}
+
+section .div-2 form .div-pass {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 2.5%;
+  position: relative;
+}
+
+section .div-2 form .div-pass label {
+  font-family: 'recoletaregular_demo';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1;
+  color: #F8AF6D;
+}
+
+section .div-2 form .div-pass input {
+  width: 100% !important;
+  margin-top: 2.5%;
+  border: none;
+  border-bottom: 3px solid #573F7B;
+  padding: 1% 0%;
+  outline: none;
+}
+
+section .div-2 form .div-pass input::-webkit-input-placeholder {
+  font-size: 16px;
+  color: #573F7B;
+  text-transform: capitalize;
+}
+
+section .div-2 form .div-pass input:-ms-input-placeholder {
+  font-size: 16px;
+  color: #573F7B;
+  text-transform: capitalize;
+}
+
+section .div-2 form .div-pass input::-ms-input-placeholder {
+  font-size: 16px;
+  color: #573F7B;
+  text-transform: capitalize;
+}
+
+section .div-2 form .div-pass input::placeholder {
+  font-size: 16px;
+  color: #573F7B;
+  text-transform: capitalize;
+}
+
+section .div-2 form .div-pass input:focus {
+  color: #F8AF6D;
+}
+
+section .div-2 form .div-pass span {
+  color: #573F7B;
+  position: absolute;
+  right: 2%;
+  bottom: 20%;
+  font-size: 15px;
+}
+
+section .div-2 form .div-con-pass {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 2.5%;
+  position: relative;
+}
+
+section .div-2 form .div-con-pass label {
+  font-family: 'recoletaregular_demo';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1;
+  color: #F8AF6D;
+}
+
+section .div-2 form .div-con-pass input {
+  width: 100% !important;
+  margin-top: 5%;
+  border: none;
+  border-bottom: 3px solid #573F7B;
+  padding: 1% 0%;
+  outline: none;
+}
+
+section .div-2 form .div-con-pass input::-webkit-input-placeholder {
+  font-size: 16px;
+  color: #573F7B;
+  text-transform: capitalize;
+}
+
+section .div-2 form .div-con-pass input:-ms-input-placeholder {
+  font-size: 16px;
+  color: #573F7B;
+  text-transform: capitalize;
+}
+
+section .div-2 form .div-con-pass input::-ms-input-placeholder {
+  font-size: 16px;
+  color: #573F7B;
+  text-transform: capitalize;
+}
+
+section .div-2 form .div-con-pass input::placeholder {
+  font-size: 16px;
+  color: #573F7B;
+  text-transform: capitalize;
+}
+
+section .div-2 form .div-con-pass input:focus {
+  color: #F8AF6D;
+}
+
+section .div-2 form .div-con-pass span {
+  color: #573F7B;
+  position: absolute;
+  right: 2%;
+  bottom: 20%;
+  font-size: 15px;
+}
+
+section .div-2 form #submit {
+  width: 100%;
+  margin-top: 5%;
+  padding: 2% 7%;
+  background: #201047;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: 'Matter';
+  outline: none;
+  border: none;
+}
+
+section .div-2 form #submit:hover {
+  color: #201047;
+  font-family: 'recoletaregular_demo';
+  background: #f4f4f4;
+}
+
+section .div-2 .sign {
+  margin-top: 2.5%;
+  font-size: 16px;
+  color: #737B7D;
+  font-family: 'Matter';
+}
+
+section .div-2 .sign span {
+  color: #F8AF6D;
+}
+
+section .div-2 .hr-s {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 2%;
+  width: 60%;
+}
+
+section .div-2 .hr-s img {
+  height: 2px;
+  width: 30%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+section .div-2 .hr-s p {
+  color: #F2780B;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 16px;
+}
+
+section .div-2 .options {
+  margin-top: 2%;
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+section .div-2 .options .fa-facebook {
+  background: #4A7AFF;
+  color: #fff;
+  font-size: 25px;
+  border-radius: 50%;
+  padding: 20%;
+}
+
+section .div-2 .options .fa-google {
+  background: #CF4C3C;
+  color: #fff;
+  font-size: 25px;
+  border-radius: 50%;
+  padding: 20%;
+}
+
+section .log {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section .div-1 {
+    height: 50vh;
+  }
+  section .div-2 {
+    height: 50vh;
+    padding: 5%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section .div-1 {
+    display: none;
+  }
+  section .div-2 {
+    height: 100vh;
+    width: 100vw;
+    padding: 10%;
+  }
+  section .div-2 form h3 {
+    font-size: 24px;
+  }
+  section .div-2 form p {
+    font-size: 14px;
+    margin-top: 5%;
+  }
+  section .div-2 form .name {
+    margin-top: 5%;
+  }
+  section .div-2 form .name .first label {
+    font-size: 14px;
+  }
+  section .div-2 form .name .first input {
+    padding: 4% 0%;
+    border-bottom: 1px solid #573F7B;
+  }
+  section .div-2 form .name .first input::-webkit-input-placeholder {
+    font-size: 14px;
+  }
+  section .div-2 form .name .first input:-ms-input-placeholder {
+    font-size: 14px;
+  }
+  section .div-2 form .name .first input::-ms-input-placeholder {
+    font-size: 14px;
+  }
+  section .div-2 form .name .first input::placeholder {
+    font-size: 14px;
+  }
+  section .div-2 form .name .last label {
+    font-size: 14px;
+  }
+  section .div-2 form .name .last input {
+    padding: 4% 0%;
+    border-bottom: 1px solid #573F7B;
+  }
+  section .div-2 form .name .last input::-webkit-input-placeholder {
+    font-size: 14px;
+  }
+  section .div-2 form .name .last input:-ms-input-placeholder {
+    font-size: 14px;
+  }
+  section .div-2 form .name .last input::-ms-input-placeholder {
+    font-size: 14px;
+  }
+  section .div-2 form .name .last input::placeholder {
+    font-size: 14px;
+  }
+  section .div-2 form .div-email {
+    margin-top: 5%;
+  }
+  section .div-2 form .div-email label {
+    font-size: 14px;
+  }
+  section .div-2 form .div-email input {
+    padding: 4% 0%;
+    border-bottom: 1px solid #573F7B;
+  }
+  section .div-2 form .div-email input::-webkit-input-placeholder {
+    font-size: 14px;
+  }
+  section .div-2 form .div-email input:-ms-input-placeholder {
+    font-size: 14px;
+  }
+  section .div-2 form .div-email input::-ms-input-placeholder {
+    font-size: 14px;
+  }
+  section .div-2 form .div-email input::placeholder {
+    font-size: 14px;
+  }
+  section .div-2 form .div-pass {
+    margin-top: 5%;
+  }
+  section .div-2 form .div-pass label {
+    font-size: 14px;
+  }
+  section .div-2 form .div-pass input {
+    padding: 4% 0%;
+    border-bottom: 1px solid #573F7B;
+  }
+  section .div-2 form .div-pass input::-webkit-input-placeholder {
+    font-size: 14px;
+  }
+  section .div-2 form .div-pass input:-ms-input-placeholder {
+    font-size: 14px;
+  }
+  section .div-2 form .div-pass input::-ms-input-placeholder {
+    font-size: 14px;
+  }
+  section .div-2 form .div-pass input::placeholder {
+    font-size: 14px;
+  }
+  section .div-2 form .div-con-pass {
+    margin-top: 5%;
+  }
+  section .div-2 form .div-con-pass label {
+    font-size: 14px;
+  }
+  section .div-2 form .div-con-pass input {
+    padding: 4% 0%;
+    border-bottom: 1px solid #573F7B;
+  }
+  section .div-2 form .div-con-pass input::-webkit-input-placeholder {
+    font-size: 14px;
+  }
+  section .div-2 form .div-con-pass input:-ms-input-placeholder {
+    font-size: 14px;
+  }
+  section .div-2 form .div-con-pass input::-ms-input-placeholder {
+    font-size: 14px;
+  }
+  section .div-2 form .div-con-pass input::placeholder {
+    font-size: 14px;
+  }
+  section .div-2 form #submit {
+    margin-top: 10%;
+    font-size: 14px;
+  }
+  section .div-2 .sign {
+    font-size: 12px;
+    margin-top: 5%;
+  }
+  section .div-2 .hr-s {
+    width: 100%;
+  }
+  section .div-2 .hr-s img {
+    height: 1px;
+  }
+  section .div-2 .hr-s p {
+    font-weight: 500;
+    font-size: 12px;
+  }
+  section .div-2 .options .fa-facebook {
+    font-size: 15px;
+    padding: 40%;
+  }
+  section .div-2 .options .fa-google {
+    font-size: 15px;
+    padding: 40%;
+  }
+  section .log {
+    display: block;
+    margin-top: 0%;
+    text-align: center;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+  }
+  section .log a {
+    text-decoration: none;
+    padding: 2%;
+    font-weight: bold;
+  }
+}
+/*# sourceMappingURL=style.css.map */

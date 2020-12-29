@@ -1,0 +1,179 @@
+@font-face {
+    font-family: 'recoletaregular_demo';
+    src: url('fonts/recoleta-regulardemo-webfont.woff2') format('woff2'),
+         url('fonts/recoleta-regulardemo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Matter';
+    src: url('matter/Matter-Light.eot');
+    src: local('matter/Matter Light'), local('Matter-Light'),
+        url('matter/Matter-Light.eot?#iefix') format('embedded-opentype'),
+        url('matter/Matter-Light.woff2') format('woff2'),
+        url('matter/Matter-Light.woff') format('woff'),
+        url('matter/Matter-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+            .div-1 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                padding: 5%;
+                position: relative;
+                background: #fff;
+                    div {
+                        background: #FBC99D;;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 5%;
+                        border-radius: 8px 0px 0px 8px;
+                            
+
+                            h3 {
+                                font-weight: bold;
+                                font-size: 24px;
+                                color: #573F7B;
+                                margin-top: 5%;
+                                text-align: center;
+                                font-family: 'recoletaregular_demo';
+                            }
+
+                            p {
+                                font-size: 18px;
+                                text-align: center;
+                                font-family: 'Matter';
+                                width: 70%;
+                                margin-top: 5%;
+                            }
+                    }
+
+                    .big-coin {
+                        height: 20%;
+                        position: absolute;
+                        left: 5%;
+                        bottom: 3%;
+                    }
+            }
+
+            .div-2 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                padding: 5%;
+                position: relative;
+                background: #201047;
+
+                .mail {
+                    height: 50%;
+                    width: 80%;
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    flex-direction: column;
+
+                        img {
+                            height: 20%;
+                        }
+
+                        h3 {
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 48px;
+                            color: #fff;
+                            font-family: 'recoletaregular_demo';
+                        }
+                }
+
+                .cc-icons {
+                    position: absolute;
+                    left: 5%;
+                    bottom: 5%;
+                    width: 20%;
+                    display: flex;
+                    justify-content: space-between;
+    
+                     a {
+                         text-decoration: none;
+                         i {
+                             font-size: 20px;
+                             color: #fff;
+                         }
+                         &:hover {
+                             opacity: 0.7;
+                         }
+                     }
+                }
+
+                .plant {
+                    right: 0;
+                    bottom: 0;
+                    position: absolute;
+                    height: 40%;
+                }
+            }
+}
+
+@media screen and (max-width:1024px){
+    section {
+        flex-direction: column;
+        .div-1 {
+            height: 50vh;
+        }
+
+        .div-2 {
+            height: 50vh;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    section {
+        flex-direction: column;
+
+            .div-1 {
+                height: 100vh;
+                    div {
+                        img {
+                            height: 100px;
+                        }
+
+                        h3 {
+                            font-size: 16px;
+                        }
+
+                        p {
+                            font-size: 14px;
+                        }
+                    }
+
+                    .big-coin {
+                        left: 60%;
+                        height: 15%;
+                    }
+            }
+
+            .div-2 {
+                display: none;
+            }
+    }
+}

@@ -1,0 +1,322 @@
+@font-face {
+  font-family: 'recoletaregular_demo';
+  src: url("fonts/recoleta-regulardemo-webfont.woff2") format("woff2"), url("fonts/recoleta-regulardemo-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Matter';
+  src: url("matter/Matter-Light.eot");
+  src: local("matter/Matter Light"), local("Matter-Light"), url("matter/Matter-Light.eot?#iefix") format("embedded-opentype"), url("matter/Matter-Light.woff2") format("woff2"), url("matter/Matter-Light.woff") format("woff"), url("matter/Matter-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+section .div-1 {
+  width: 100%;
+  background: #201047;
+  padding: 8%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+section .div-1 .logo {
+  height: 10%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+section .div-1 h3 {
+  font-size: 48px;
+  font-family: 'recoletaregular_demo';
+  text-align: center;
+  color: #FFFFFF;
+  width: 120%;
+  margin-top: 0%;
+}
+
+section .div-1 h3 a {
+  color: #F8AF6D;
+  text-decoration: none;
+}
+
+section .div-1 h3 a:hover {
+  opacity: 0.7;
+}
+
+section .div-1 button {
+  padding: 2% 15%;
+  background: #F8AF6D;
+  font-size: 16px;
+  outline: none;
+  border-radius: 8px;
+  color: #fff;
+  outline: none;
+  border: none;
+  margin-top: 0%;
+}
+
+section .div-1 button a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+section .div-1 button:hover {
+  color: #F8AF6D;
+  background: #f4f4f4;
+}
+
+section .div-1 .cc-icons {
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section .div-1 .cc-icons a {
+  text-decoration: none;
+}
+
+section .div-1 .cc-icons a i {
+  font-size: 20px;
+  color: #fff;
+}
+
+section .div-1 .cc-icons a:hover {
+  opacity: 0.7;
+}
+
+section .div-1 .bad-plant {
+  position: absolute;
+  left: 0;
+  bottom: 0%;
+  height: 30%;
+}
+
+section .div-2 {
+  background: #fff;
+  padding: 8%;
+  width: 100%;
+  position: relative;
+}
+
+section .div-2 form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section .div-2 form h3 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  font-family: 'recoletaregular_demo';
+  color: #573F7B;
+  letter-spacing: 3px;
+}
+
+section .div-2 form p {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  color: #737B7D;
+  margin-top: 2%;
+}
+
+section .div-2 form .div-email {
+  margin-top: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section .div-2 form .div-email label {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+  font-family: 'Matter';
+  color: #AEA79F;
+}
+
+section .div-2 form .div-email input {
+  width: 100% !important;
+  margin-top: 0%;
+  border: none;
+  border-bottom: 3px solid #573F7B;
+  padding: 2% 0%;
+  outline: none;
+}
+
+section .div-2 form .div-email input::-webkit-input-placeholder {
+  font-size: 16px;
+  color: #573F7B;
+  text-transform: capitalize;
+}
+
+section .div-2 form .div-email input:-ms-input-placeholder {
+  font-size: 16px;
+  color: #573F7B;
+  text-transform: capitalize;
+}
+
+section .div-2 form .div-email input::-ms-input-placeholder {
+  font-size: 16px;
+  color: #573F7B;
+  text-transform: capitalize;
+}
+
+section .div-2 form .div-email input::placeholder {
+  font-size: 16px;
+  color: #573F7B;
+  text-transform: capitalize;
+}
+
+section .div-2 form .div-email input:focus {
+  color: #F8AF6D;
+}
+
+section .div-2 form #submit {
+  margin-top: 8%;
+  padding: 2%;
+  background: #201047;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+  border: none;
+}
+
+section .div-2 form #submit:hover {
+  color: #201047;
+  background: #f4f4f4;
+}
+
+section .div-2 form .sign {
+  margin-top: 5%;
+  font-size: 16px;
+  font-family: 'Matter';
+  color: #737B7D;
+  text-align: center;
+}
+
+section .div-2 form .sign a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  color: #573F7B;
+}
+
+section .div-2 .big-coin {
+  height: 30%;
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+}
+
+@media screen and (max-width: 1024px) {
+  section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section .div-1 {
+    height: 50vh;
+    width: 100%;
+  }
+  section .div-2 {
+    height: 50vh;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section .div-1 {
+    display: none;
+  }
+  section .div-2 {
+    padding: 10%;
+    height: 100vh;
+  }
+  section .div-2 form h3 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  section .div-2 form p {
+    font-size: 12px;
+    margin-top: 5%;
+  }
+  section .div-2 form .div-email {
+    margin-top: 5%;
+  }
+  section .div-2 form .div-email label {
+    font-weight: 500;
+    font-size: 14px;
+  }
+  section .div-2 form .div-email input {
+    border-bottom: 1px solid #573F7B;
+    padding: 1% 0%;
+  }
+  section .div-2 form #submit {
+    margin-top: 10%;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  section .div-2 .big-coin {
+    height: 20%;
+    bottom: 20%;
+    right: 10%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

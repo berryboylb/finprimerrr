@@ -1,0 +1,501 @@
+@font-face {
+    font-family: 'recoletaregular_demo';
+    src: url('fonts/recoleta-regulardemo-webfont.woff2') format('woff2'),
+         url('fonts/recoleta-regulardemo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Matter';
+    src: url('matter/Matter-Light.eot');
+    src: local('matter/Matter Light'), local('Matter-Light'),
+        url('matter/Matter-Light.eot?#iefix') format('embedded-opentype'),
+        url('matter/Matter-Light.woff2') format('woff2'),
+        url('matter/Matter-Light.woff') format('woff'),
+        url('matter/Matter-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+
+        .div-1 {
+            background: #fff;
+            height: 100vh;
+            padding: 8%;
+            width: 100%;
+            position: relative;
+            // display: flex;
+            // flex-direction: column;
+            // align-items: center;
+        
+                form {
+                   display: flex;
+                   flex-direction: column;
+
+                   h3 {
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 32px;
+                        font-family: 'recoletaregular_demo';
+                        color: #573F7B;
+                   }
+
+                   p {
+                    font-family: Arial;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 18px;
+                    color: #737B7D;
+                    margin-top: 2%;
+                   }
+
+                   .div-email {
+                        margin-top: 2%;
+                        display: flex;
+                        flex-direction: column;
+
+                     
+
+                        label {
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 1;
+                            font-family: 'Matter';
+                            color: #AEA79F;
+
+                        }
+
+                        input {
+                            width: 100% !important;
+                            margin-top: 0%;
+                            border: none;
+                            border-bottom: 3px solid #573F7B;
+                            padding: 2% 0%;
+                            outline: none;
+
+                            &::placeholder {
+                                font-size: 16px;
+                                color: #573F7B;
+                                text-transform: capitalize;
+                            }
+
+                            &:focus {
+                               color: #F8AF6D;
+                            }
+                        }
+                   }
+
+                 .div-pass  {
+                    margin-top: 4%;
+                    display: flex;
+                    flex-direction: column;
+
+                    position: relative;
+
+                    .password {
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 1;
+                        font-family: 'Matter';
+                        color: #AEA79F;
+
+                    }
+
+                    input {
+                        width: 100% !important;
+                        margin-top: 0%;
+                        border: none;
+                        border-bottom: 3px solid #573F7B;
+                        padding: 2% 0%;
+                        outline: none;
+
+                        &::placeholder {
+                            font-size: 16px;
+                            color: #573F7B;
+                            text-transform: capitalize;
+                        }
+
+                        &:focus {
+                           color: #F8AF6D;
+                        }
+                    }
+
+                    span {
+                        position: absolute;
+                        right: 2%;
+                        bottom: 55%;
+                        color:  #D0C9D6;
+                    }
+
+                    .rem-for {
+                        display: flex;
+                        justify-content: space-between;
+                        margin-top: 3%;
+
+                            .check {
+                                display: flex;
+                                input[type=checkbox].css-checkbox {
+                                    position:absolute; z-index:-1000; left:-1000px; overflow: hidden; clip: rect(0 0 0 0); height:1px; width:1px; margin:-1px; padding:0; border:0;
+                                }
+        
+                                input[type=checkbox].css-checkbox + label.css-label {
+                                    padding-left:29px;
+                                    height:24px; 
+                                    display:inline-block;
+                                    line-height:24px;
+                                    background-repeat:no-repeat;
+                                    background-position: 0 0;
+                                    font-size:24px;
+                                    vertical-align:middle;
+                                    cursor:pointer;
+        
+                                }
+        
+                                input[type=checkbox].css-checkbox:checked + label.css-label {
+                                    background-position: 0 -24px;
+                                }
+                                label.css-label {
+                                    background-image:url(http://csscheckbox.com/checkboxes/u/csscheckbox_4f6bc9a7cc47504b9c36e04aa489f19e.png);
+                                    -webkit-touch-callout: none;
+                                    -webkit-user-select: none;
+                                    -khtml-user-select: none;
+                                    -moz-user-select: none;
+                                    -ms-user-select: none;
+                                    user-select: none;
+                                }
+
+                                .css-label {
+                                    font-size: 16px !important;
+                                    color: #AEA79F !important;
+                                    font-family: matter, 'Nunito sans', sans-serif !important;
+                                }
+                            }
+
+                            .forgot {
+                                 a {
+                                    color: #6B61B1;
+                                    font-size: 16px;
+                                    font-weight: bold;
+                                    font-family: matter, 'Nunito sans', sans-serif !important;
+                                    text-decoration: none;
+
+                                    &:hover {
+                                        opacity: 0.8;
+                                    }
+                                 }
+                            }
+                    }
+                 }
+
+                 #submit {
+                     margin-top: 5%;
+                     padding: 2%;
+                     background: #201047;
+                    border-radius: 8px;
+                    color: #fff;
+                    font-size: 16px;
+                    outline: none;
+                    border: none;
+
+                    &:hover {
+                        color: #201047;
+                        background: #f4f4f4;
+                    }
+                 }
+
+                 .sign {
+                    margin-top: 2.5%;
+                    font-size: 16px;
+                    color: #737B7D;
+                    font-family: 'Matter';
+                    display: none;
+
+                    span {
+                        color: #F8AF6D;
+                    }
+                }
+
+                 .log {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 2%;
+                    width: 100%;
+
+                    img {
+                        height: 2px;
+                        width: 30%;
+                        align-self: center;
+                    }
+
+                    p {
+                        color: #F2780B;
+                        align-self: center;
+                        font-size: 16px;
+                    }
+                 }
+                }
+
+                .options {
+                    margin-top: 4%;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-evenly;
+
+                    .fa-facebook {
+                        background: #4A7AFF;
+                        color: #fff;
+                        font-size: 25px;
+                        border-radius: 50%;
+                        padding: 20%;
+                    }
+
+                    .fa-google {
+                        background:  #CF4C3C;
+                        color: #fff;
+                        font-size: 25px;
+                        border-radius: 50%;
+                        padding: 20%;
+                    }
+                }
+
+                .big-coin {
+                    position: absolute;
+                    left: 2%;
+                    bottom: 5%;
+                    height: 20%;
+                }
+        }
+
+        .div-2 {
+            width: 100%;
+            background: #201047;
+            padding: 8%;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+
+            .logo {
+                height: 10%;
+                align-self: center;
+            }
+
+            h3 {
+                font-size: 48px;
+                font-family: 'recoletaregular_demo';
+                text-align: center;
+                color: #FFFFFF;
+                width: 70%;
+                margin-top: 5%;
+
+                a {
+                  color: #F8AF6D;
+                   text-decoration: none;
+                }
+                a:hover {
+                    opacity: 0.7;
+                }
+            }
+
+            button {
+                padding: 2% 15%;
+                background: #F8AF6D;
+                font-size: 16px;
+                outline: none;
+                border-radius: 8px;
+                color: #fff;
+                outline: none;
+                border: none;
+                margin-top: 0%;
+                width: 80%;
+                    a {
+                        text-decoration: none;
+                        color: inherit;
+                    }
+            }
+
+            button:hover {
+                color:  #F8AF6D;
+               background: #f4f4f4; 
+            }
+
+            .cc-icons {
+                position: absolute;
+                left: 5%;
+                bottom: 5%;
+                width: 20%;
+                display: flex;
+                justify-content: space-between;
+
+                 a {
+                     text-decoration: none;
+                     i {
+                         font-size: 20px;
+                         color: #fff;
+                     }
+                     &:hover {
+                         opacity: 0.7;
+                     }
+                 }
+            }
+
+            .bad-plant {
+                position: absolute;
+                right: 0;
+                bottom: 0%;
+                height: 30%;
+            }
+        }
+}
+
+@media screen and (max-width:1024px) {
+    section {
+        flex-direction: column;
+
+        .div-1 {
+            height: 50vh;
+
+            form {
+                 
+                #submit {
+                     z-index: 3;
+                }
+
+                .log {
+                     z-index: 3;
+                }
+            }
+        }
+
+        .div-2 {
+            height: 50vh;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    section {
+        flex-direction: column;
+        .div-1 {
+            padding: 10%;
+                form {
+                    h3 {
+                        font-size: 24px;
+                    }
+
+                    p {
+                        font-size: 12px;
+                        margin-top: 5%;
+                    }
+
+                    .div-email {
+                        margin-top: 5%;
+                            label {
+                                font-weight: 500;
+                                font-size: 14px;
+                            }
+
+                            input {
+                                border-bottom: 1px solid #573F7B;
+                                padding: 1% 0%;
+                            }
+                    }
+
+                    .div-pass {
+                        margin-top: 5%;
+                        label {
+                            font-weight: 500;
+                            font-size: 14px;
+                        }
+
+                        input {
+                            border-bottom: 1px solid #573F7B;
+                            padding: 1% 0%;
+                        }
+
+                        .rem-for {
+                            margin-top: 5%;
+                            
+                            .check {
+                                .css-label {
+                                    font-size: 10px !important;
+                                }
+                            }
+
+                            .forgot {
+                                a {
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+
+
+                    }
+
+                    #submit {
+                        margin-top: 10%;
+                        font-weight: bold;
+                        font-size: 14px;
+                    }
+
+                    .sign {
+                        margin-top: 5%;
+                        font-size: 12px;
+                        display: block;
+                    }
+
+                    .log {
+                        img {
+                            height: 1%;
+                        }
+                        p {
+                            font-weight: 500;
+                            font-size: 12px;
+                            align-self: center;
+                        }
+                    }
+
+                }
+
+                
+                .options {
+
+                    .fa-facebook {
+                        font-size: 15px;
+                        padding: 40%;
+                    }
+    
+                    .fa-google  {
+                        font-size: 15px;
+                        padding: 40%;
+                    }
+                }
+
+                .big-coin {
+                    left: 75%;
+                    bottom: 10%;
+                    height: 10%;
+                }
+        }
+
+        .div-2 {
+            display: none;
+        }
+    }
+}
